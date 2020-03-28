@@ -14,5 +14,5 @@ p { margin-bottom: 1.15rem; }
 .justify-center { text-align:center; }
 
 .container { max-width:900px; padding:0 1em; }
-.button { border-radius:1.5em; font-family:'Oswald', sans-serif; text-decoration:none; text-transform:uppercase; padding:0.5em 1em; }
-.button.cta { background:#B00734; color:#fff; text-shadow: -1px -1px 1px rgba(0,0,0,0.3); }
+.button { border-radius:1.5em; font-family:'Oswald', sans-serif; text-decoration:none; text-transform:uppercase; padding:0.25em 1em; }
+.button.cta { background:#B00734; color:#fff; font-size:1.5em; text-shadow: -1px -1px 1px rgba(0,0,0,0.3); }
