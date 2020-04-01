@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:600|Raleway&display=swap');
 
+html { box-sizing:border-box; }
+*, *:before, *:after { box-sizing:inherit; }
 body { background:#1d1d28; color:#A5A5A5; font-family: 'Raleway', sans-serif; font-weight:400; font-size:16px; line-height:1.65; margin:0; }
-header { background:#ff0033; padding:2em; }
+header { background:#ff0033; padding:2rem; }
 h1, h2, h3, h4, h5, h6 { color:#fff; font-family:'Oswald', sans-serif; font-weight:600; line-height:1.15; margin:2.75rem 0 1.05rem; text-align:center; }
 h1 { font-size:1.563em; margin-top:0.525rem; }
 h2 { font-size:2.441em; }
@@ -9,32 +11,35 @@ h3 { font-size:1.953em; }
 h4 { font-size:1.563em; }
 h5 { font-size:1.25em; }
 p { margin-bottom: 1.15rem; }
+img { width:100%; }
 ul { list-style:none; padding-left:0; }
 a { color:#ff0033; font-weight:bold; }
 a:hover { color:#FFF; }
 small, .text_small { font-size:0.8em; }
+textarea { border:none; padding:1rem; width:100%; }
 
 .center { margin-left:auto; margin-right:auto; }
 .justify-center { text-align:center; }
 
-.container { max-width:900px; padding:2em; }
+.container { max-width:900px; padding:2rem; }
 
-.button { border-radius:1.5em; font-family:'Oswald', sans-serif; text-decoration:none; text-transform:uppercase; padding:0.25em 1em; }
-.button.cta { background:#ff0033; color:#fff; font-size:1.5em; }
+.button { border:none; border-radius:1.5em; display:block; font-family:'Oswald', sans-serif; font-size:1.5em; text-decoration:none; text-transform:uppercase; padding:0.25em 1em; }
+.button.small { font-size:1em; }
+.button.cta { background:#ff0033; color:#fff; }
 .button.cta:hover { background:#FFF; color:#ff0033; }
 .button.cta:active { background:#A5A5A5; }
 
-.logo { display:block; max-width:360px; width:100%; }
+.logo { display:block; max-width:360px; }
 
 @media screen and (max-width:425px) {
 	body { font-size:14px; }
 }
 
 @media screen and (min-width:641px) {
-	.helpbox { display:flex; margin:2.75em 0 1em 0; }
-	.helpbox > div { padding:1em; width:50%; }
-	.helpbox > div:first-child { border-right:1px solid #A5A5A5; }
-	.helpbox > div:last-child { border-left:1px solid #A5A5A5; }
-	.helpbox > div > *:first-child { margin-top:0; }
-	.helpbox > div > *:last-child { margin-bottom:0; }
+	.flexbox-2 { display:flex; margin:2.75em 0 1em 0; }
+	.flexbox-2 > div { padding:1rem; width:50%; }
+	.flexbox-2 > div:first-child { border-right:1px solid #A5A5A5; }
+	.flexbox-2 > div:last-child { border-left:1px solid #A5A5A5; }
+	.flexbox-2 > div > *:first-child { margin-top:0; }
+	.flexbox-2 > div > *:last-child { margin-bottom:0; }
 }
